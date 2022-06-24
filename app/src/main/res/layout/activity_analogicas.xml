@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Analogicas">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DEFINA LOS VALORES MAXIMOS Y MINIMOS PARA ESTA SEÑAL ANALOGICA:"
+                android:background="#202C4A"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="#D2FDFDFD"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextTextname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:ems="10"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textViewmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Porcentaje minimo:"
+                android:gravity="center"
+                android:background="#39F106"
+                android:padding="10dp"
+                android:textSize="14sp" />
+            <SeekBar
+                android:id="@+id/seekBar_min"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="25dp"
+                android:max="99" />
+
+            <Spinner
+                android:id="@+id/spinner_min"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/ly_emailmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextEmail2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Para:"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/editTextTextMultiLine2"
+                    android:layout_width="match_parent"
+                    android:layout_height="114dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Contenido de la notificacion"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textViewmax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:background="#DAF15806"
+                android:padding="10dp"
+                android:text="Porcentaje maximo:" />
+
+            <SeekBar
+                android:id="@+id/seekBar_max"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="25dp"
+                android:max="100"
+                android:progress="100" />
+
+            <Spinner
+                android:id="@+id/spinner_max"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/ly_emailmax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextEmail3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Para:"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/editTextTextMultiLine3"
+                    android:layout_width="match_parent"
+                    android:layout_height="114dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Contenido de la notificacion"
+                    android:inputType="textMultiLine" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ACEPTAR"
+                android:layout_marginTop="15dp"
+                android:text="ACEPTAR" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

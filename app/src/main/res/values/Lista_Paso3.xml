@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Lista_Paso3">
+        <item>SELECCIONE LA ACCION: </item>
+        <item>1: Cuando cambie de estado</item>
+        <item>2: Cuando cambie a ON</item>
+        <item>3: Cuando cambie a OFF</item>
+        <item>4: Luego de N veces</item>
+    </string-array>
+</resources>

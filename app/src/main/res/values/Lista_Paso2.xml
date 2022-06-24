@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Lista_Paso2">
+        <item>SELECCIONE LA ACCION: </item>
+        <item>Activar Alarma</item>
+        <item>Enviar un Email</item>
+        <item>Activar ElectroValvula</item>
+        <item>Guardar en Historial</item>
+    </string-array>
+</resources>

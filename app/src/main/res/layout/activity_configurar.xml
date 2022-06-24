@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Configurar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:gravity="center"
+                android:text="CONFIGURANDO TU SISTEMA IIoT"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#202C4A"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textColor="#D2FDFDFD"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutpaso1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="3dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="150dp"
+                    android:layout_height="500dp"
+                    android:layout_gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/entradasiot" />
+
+                <Button
+                    android:id="@+id/buttona1"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="Analogica1"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+                <Button
+                    android:id="@+id/buttona2"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="Analogica2"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/buttona1" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="Digital4"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="Digital2"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/button17" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="Digital3"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+                <Button
+                    android:id="@+id/button17"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="70dp"
+                    android:background="#00FFFFFF"
+                    android:longClickable="false"
+                    android:onClick="Digital1"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+                <TextView
+                    android:id="@+id/textViewdi1"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#6F5C5C5A"
+                    android:gravity="center"
+                    android:onClick="Digital1"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/button17"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewdi"
+                    app:layout_constraintStart_toEndOf="@+id/button17"
+                    app:layout_constraintTop_toTopOf="@+id/button17" />
+
+                <TextView
+                    android:id="@+id/textViewdi"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#6F97A9BA"
+                    android:gravity="center"
+                    android:onClick="Digital1B"
+                    android:text="  +  "
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/button17"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textViewdi1"
+                    app:layout_constraintTop_toTopOf="@+id/button17" />
+
+                <TextView
+                    android:id="@+id/textViewdi5"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#6F97A9BA"
+                    android:gravity="center"
+                    android:onClick="Digital2B"
+                    android:text="  +  "
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/button2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textViewdi2"
+                    app:layout_constraintTop_toTopOf="@+id/button2" />
+
+                <TextView
+                    android:id="@+id/textViewdi6"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#6F97A9BA"
+                    android:gravity="center"
+                    android:onClick="Digital3B"
+                    android:text="  +  "
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/button3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textViewdi3"
+                    app:layout_constraintTop_toTopOf="@+id/button3" />
+
+                <TextView
+                    android:id="@+id/textViewdi7"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#6F97A9BA"
+                    android:gravity="center"
+                    android:onClick="Digital4B"
+                    android:text="  +  "
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/button4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textViewdi4"
+                    app:layout_constraintTop_toTopOf="@+id/button4" />
+
+                <TextView
+                    android:id="@+id/textViewdi3"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#6F5C5C5A"
+                    android:gravity="center"
+                    android:onClick="Digital3"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/button3"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewdi6"
+                    app:layout_constraintStart_toEndOf="@+id/button3"
+                    app:layout_constraintTop_toTopOf="@+id/button3" />
+
+                <TextView
+                    android:id="@+id/textViewdi2"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#6F5C5C5A"
+                    android:gravity="center"
+                    android:onClick="Digital2"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/button2"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewdi5"
+                    app:layout_constraintStart_toEndOf="@+id/button2"
+                    app:layout_constraintTop_toTopOf="@+id/button2" />
+
+                <TextView
+                    android:id="@+id/textViewdi4"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#6F5C5C5A"
+                    android:gravity="center"
+                    android:onClick="Digital4"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/button4"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewdi7"
+                    app:layout_constraintStart_toEndOf="@+id/button4"
+                    app:layout_constraintTop_toTopOf="@+id/button4" />
+
+                <TextView
+                    android:id="@+id/textViewdi8"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#6F5C5C5A"
+                    android:gravity="center"
+                    android:onClick="Analogica1"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttona1"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewdi9"
+                    app:layout_constraintStart_toEndOf="@+id/buttona1"
+                    app:layout_constraintTop_toTopOf="@+id/buttona1" />
+
+                <TextView
+                    android:id="@+id/textViewdi9"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#6F97A9BA"
+                    android:gravity="center"
+                    android:onClick="Analogica1"
+                    android:text="  +  "
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttona1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textViewdi8"
+                    app:layout_constraintTop_toTopOf="@+id/buttona1" />
+
+                <TextView
+                    android:id="@+id/textViewdi10"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="8dp"
+                    android:background="#6F5C5C5A"
+                    android:gravity="center"
+                    android:onClick="Analogica2"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttona2"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewdi11"
+                    app:layout_constraintStart_toEndOf="@+id/buttona2"
+                    app:layout_constraintTop_toTopOf="@+id/buttona2" />
+
+                <TextView
+                    android:id="@+id/textViewdi11"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#6F97A9BA"
+                    android:gravity="center"
+                    android:onClick="Analogica2"
+                    android:text="  +  "
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/buttona2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textViewdi10"
+                    app:layout_constraintTop_toTopOf="@+id/buttona2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutpaso2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+
+                <TableLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv101"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="15dp"
+                            android:text="Interruptor" />
+
+                        <TextView
+                            android:id="@+id/textView115"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:text="Motor" />
+
+                        <TextView
+                            android:id="@+id/textView111"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:text="Presostato" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:id="@+id/button5"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginEnd="15dp"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="switch"
+                            android:onClick="Electroval"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/interruptor2" />
+
+                        <ImageButton
+                            android:id="@+id/button105"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="otro"
+                            android:onClick="SolenoidValve"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/motor" />
+
+                        <ImageButton
+                            android:id="@+id/button6"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="15dp"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="pressostato"
+                            android:onClick="Reed"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/presion" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv102"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="15dp"
+                            android:text="Actuador" />
+
+                        <TextView
+                            android:id="@+id/textView113"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:text="Bomba" />
+
+                        <TextView
+                            android:id="@+id/textView112"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:text="Termostato" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:id="@+id/button7"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginEnd="15dp"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="actuador"
+                            android:onClick="Valvetop"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/prensa" />
+
+                        <ImageButton
+                            android:id="@+id/button103"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="otro"
+                            android:onClick="SolenoidValve"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/bomba" />
+
+                        <ImageButton
+                            android:id="@+id/button8"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="15dp"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="interruptor"
+                            android:onClick="GOswitch"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/temperatura" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv104"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="15dp"
+                            android:text="Sensor" />
+
+                        <TextView
+                            android:id="@+id/textView114"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:text="Alarma" />
+
+                        <TextView
+                            android:id="@+id/textView1141"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:text="Boton" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:id="@+id/button94"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginEnd="15dp"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="sensor"
+                            android:onClick="Presostato"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/sensor" />
+
+                        <ImageButton
+                            android:id="@+id/button104"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="otro"
+                            android:onClick="SolenoidValve"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/alarma" />
+
+                        <ImageButton
+                            android:id="@+id/button1044"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="15dp"
+                            android:background="#00FFFFFF"
+                            android:contentDescription="otro"
+                            android:onClick="SolenoidValve"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/boton1" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/button18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_span="3"
+                            android:onClick="Otrotipo"
+                            android:text="Otro tipo de elemento" />
+                    </TableRow>
+                </TableLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutpaso3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NOMBRE"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextnombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/side_nav_bar"
+                    android:textSize="8sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewkwh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        android:text="Consumo Energetico Asociado [kWh]"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/editTextkwh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:text="0" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/side_nav_bar"
+                    android:textSize="8sp" />
+
+                <Spinner
+                    android:id="@+id/listpaso3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:foregroundGravity="center"
+                    android:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/editTextNumber2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Cuantas Veces"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/button19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="Alpaso4"
+                    android:text="Continuar" />
+            </LinearLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutpaso4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="#484E4749"
+                    android:onClick="Notificacion"
+                    android:text="Recibir un Email"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="#407A8DA3"
+                    android:onClick="Act_Alarma"
+                    android:text="Activar ALARMA"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button11" />
+
+                <Button
+                    android:id="@+id/button14"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="#4DE4D4D4"
+                    android:onClick="Act_Electroval"
+                    android:text="Activar ELECTROVAL"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button13" />
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="#4B91B57E"
+                    android:onClick="Historial"
+                    android:text="Guardar Historial"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button14" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutemail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/editTextTextEmailAddress2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Para:"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/editTextTextMultiLine2"
+                    android:layout_width="match_parent"
+                    android:layout_height="114dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="Contenido de la notificacion"
+                    android:inputType="textMultiLine" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="elemail"
+                    android:text="CONTINUAR" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutfinal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/button15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#92C2E8"
+                    android:onClick="Seguir"
+                    android:text="Seguir Configurando" />
+
+
+                <Button
+                    android:id="@+id/button16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#92C2E8"
+                    android:onClick="FIN"
+                    android:text="FINALIZAR" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

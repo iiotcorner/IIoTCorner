@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Lista_horas_estd">
+        <item> Movimiento de las ultimas 24 Hrs </item>
+        <item> Movimiento de las ultimas 48 Hrs </item>
+        <item> Movimiento de la ultima Semana </item>
+        <item> Movimiento de la ultima Quincena </item>
+        <item> Movimiento del ultimo Mes </item>
+    </string-array>
+</resources>

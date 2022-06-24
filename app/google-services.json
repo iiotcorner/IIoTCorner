@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "234529528463",
+    "firebase_url": "https://iiotcorner01.firebaseio.com",
+    "project_id": "iiotcorner01",
+    "storage_bucket": "iiotcorner01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234529528463:android:b9c086110458c17c2eeefa",
+        "android_client_info": {
+          "package_name": "com.example.iiotcorner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234529528463-in3k6u5g8v04l5581r75f6nsrkn7ck48.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.iiotcorner",
+            "certificate_hash": "f3f020a7fa13572b6a0e867b438aabef440abe06"
+          }
+        },
+        {
+          "client_id": "234529528463-7en5947i8886qupeqm9m2pvd7je3trc0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-q2s7OGxQCAL1Or756d8vwANP5EkKNCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234529528463-7en5947i8886qupeqm9m2pvd7je3trc0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
